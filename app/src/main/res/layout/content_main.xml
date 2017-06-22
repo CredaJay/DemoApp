@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lay_root"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mcao.demoapp2.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt1"
+        android:text="跳转到第二个页面"
+        app:layout_constraintLeft_toRightOf="@+id/btlogin"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/clock" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btlogin"
+        android:text="跳转到登录页面"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/btlist" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btlist"
+        android:text="BaseAdapter Page"
+        tools:layout_editor_absoluteY="1dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时钟与日期控件"
+        android:id="@+id/clock"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintLeft_toRightOf="@+id/btlist"
+        android:layout_marginLeft="39dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adapter合集"
+        android:id="@+id/adapter_compilation"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/btlogin"
+        android:layout_marginLeft="23dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <!--以下是四个非登录功能组件 -->
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="70dp">
+
+        <TextView
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:text="微信" />
+
+        <TextView
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:text="通讯录" />
+
+        <TextView
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:text="发现" />
+
+        <TextView
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:text="我" />
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>

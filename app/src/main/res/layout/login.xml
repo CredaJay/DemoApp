@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="4"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_columnSpan="2"
+        android:text="用户登录"
+        android:textSize="50sp" />
+    <TextView
+        android:text="用户名"/>
+    <EditText
+        android:text="字母/数字"/>
+    <TextView
+        android:text="密码"/>
+    <EditText
+        android:text="字母数字"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:text="登录" />
+</GridLayout>
